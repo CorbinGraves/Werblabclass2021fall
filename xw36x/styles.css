@@ -1,0 +1,244 @@
+/*--- the * means select all elements----  */
+* {
+  /* padding: 0;
+  marigin: 0; */
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+/* head styles */
+
+head {
+  margin: 0px;
+}
+/*The CSS box-sizing property allows us to include the padding and border in an element's total width and height.  */
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0px;
+}
+
+main {
+}
+
+footer {
+  color: white;
+  margin-top: 100px;
+  background-image: linear-gradient(to right, #4e4675, #32a0a8);
+  width: 100vw;
+}
+
+nav {
+  background-image: linear-gradient(to right, #4e4675, #32a0a8);
+  height: 70px;
+  width: 100%;
+  box-shadow: 2px 2px 5px;
+}
+
+.carousel-inner {
+  width: 100px;
+  height: 200px;
+  opacity: 50%;
+  filter: blur(8px);
+}
+
+/*Carousel  */
+#carouselExampleSlidesOnly img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/*Text on top of hero image*/
+/* .bg-text {
+  background-color: rgba(0,0,0, 0.4);
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+} */
+
+.logo {
+  color: white;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+  font-size: 29px;
+  padding-left: 10px;
+}
+
+.card-body {
+  border-radius: 10px;
+  align-content: center;
+  margin: 20px;
+  box-shadow: 2px 2px 5px;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.flex-item {
+  padding: 20px;
+}
+
+.blue-background {
+  background-image: linear-gradient(to right, #4e4675, #32a0a8);
+}
+
+.heroimage {
+  width: 100vw;
+  object-fit: cover;
+  height: 150px;
+  overflow: hidden;
+}
+
+h2 {
+  text-align: center;
+}
+
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+/*Another short hand margin top&bottom, left&right  */
+
+nav ul li a {
+  color: white;
+  font-size: 17px;
+  text-transform: uppercase;
+  padding: 7px 13px;
+  border-radius: 3px;
+}
+
+.active,
+a:hover {
+  text-decoration-line: underline;
+  transition: 0.5s;
+}
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+/* -----------grid--------- */
+.grid-container {
+  display: grid;
+  padding-top: 90px;
+  font-weight: 600;
+  font-size: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: #32a0a8;
+  /* this aliing itmes to the enter in the grid */
+  justify-content: space-evenly;
+  justify-items: center;
+  align-content: space-evenly;
+  align-items: center;
+}
+
+.grid-item {
+  justify-content: center;
+  padding: 20px;
+}
+.gridimage {
+  width: 200px;
+  height: 100%;
+  display: inline;
+  transform: perspective(1000px) rotateY(30deg);
+}
+
+.gridimage2 {
+  width: 200px;
+  height: 100%;
+  display: inline;
+  transform: perspective(1000px) rotateY(-30deg);
+}
+
+.space {
+  height: 900px;
+}
+
+.comicimage {
+  width: 200px;
+  height: auto;
+}
+
+/* ====medium-------- */
+
+@media (max-width: 952px) {
+  label.logo {
+    font-size: 20px;
+    padding-left: 10px;
+  }
+  nav {
+    width: 100%;
+  }
+  nav ul li a {
+    font-size: 10px;
+  }
+}
+
+/*----------Small---------------*/
+@media (max-width: 858px) {
+  .card-text {
+    font-size: 12px;
+    display: none;
+  }
+  .checkbtn {
+    display: block;
+  }
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #900000;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 20px;
+  }
+  a:hover,
+  a.active {
+    background: none;
+    color: #0000ff;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+}
+
+@media (max-width: 700px) {
+}
