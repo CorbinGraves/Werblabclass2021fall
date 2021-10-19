@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>responsive Navbar</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <nav>
+      <input type="checkbox" id="check" />
+      <label for="check" class="checkbtn">
+        <!-- When used together with the <label> element, the for attribute specifies which form element a label is bound to.       -->
+        <i class="fas fa-bars"></i>
+      </label>
+
+      <label class="logo">Comics throguh the ages</label>
+      <ul>
+        <li><a class="active" href="#">Home</a></li>
+        <li><a href="#golden">Golden age</a></li>
+        <li><a href="#silver">Silver age</a></li>
+        <li><a href="#bronze">Bronze age</a></li>
+      </ul>
+    </nav>
+
+    <!--   <div class="bg-text">
+  <h1 style="font-size:50px">Comics throguh the ages</h1>
+</div> -->
+    <!-- text on top of hero image   -->
+
+    <div
+      id="carouselExampleSlidesOnly"
+      class="carousel slide"
+      data-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="https://lh3.googleusercontent.com/S09Fv17_X6bk7lV6yJuTc4Lr6ieXvEjaP8v-CrZdqPBpxh1jDxxXAgYZWS_hX-87neSogonyrkgjteEWfE2PxRZubN-NTm513guPiECIm0ZQpvFov7i1_W7EJdHPSNnn0HRv_PmISw=w486-h315-p-k"
+            class="d-block w-100"
+            alt="spiderman comic"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://lh3.googleusercontent.com/hlXTyC-iUo6lfhgCccxhLmImaTqp6XzmsICas7KzIjPN89g7W-G0pkdY34ykaKJZg6fHkv03hJgIXKOcNBcF8Ue81_H07kjqddTldYwlvQSoJXK2FnA7_Q882gw6Akx0vgjgW103Hg=w214-h315-p-k"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://lh3.googleusercontent.com/S09Fv17_X6bk7lV6yJuTc4Lr6ieXvEjaP8v-CrZdqPBpxh1jDxxXAgYZWS_hX-87neSogonyrkgjteEWfE2PxRZubN-NTm513guPiECIm0ZQpvFov7i1_W7EJdHPSNnn0HRv_PmISw=w486-h315-p-k"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+      </div>
+    </div>
+    <main>
+      <div class="card">
+        <div class="flex-container">
+          <div class="card-body">
+            <iframe
+              src="https://giphy.com/embed/Umc1F1eCeqGVW"
+              width="480"
+              height="320"
+              frameborder="0"
+              class="giphy-embed"
+              allowfullscreen
+            ></iframe>
+          </div>
+
+          <div class="card-body">
+            <h5 class="card-title">What is sequencial art?</h5>
+            <p class="card-text">
+              The term "sequential art" was coined in 1985 by comics artist Will
+              Eisner in his book Comics and Sequential Art. Eisner analyzed this
+              form into four elements: design, drawing, caricature, and writing.
+              Scott McCloud, another comics artist, elaborated the explanation
+              further, in his books Understanding Comics (1993) and Reinventing
+              Comics (2000). In Understanding Comics, he notes that the movie
+              roll, before it is being projected, arguably could be seen as a
+              very slow comic.
+            </p>
+            <a href="#" class="btn btn-primary">Check it out</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- new flex container -->
+      <h2 id="golden">Gold Age</h2>
+      <div class="flex-container">
+        <div class="flex-item">
+          <img src="src/img/goldenbatman" alt="" class="comicimage" />
+        </div>
+        <div class="flex-item">
+          <div class="card-body">
+            <p class="flex-text">
+              The Golden Age of Comic Books describes an era of American comic
+              books from 1938 to 1956. During this time, modern comic books were
+              first published and rapidly increased in popularity.
+            </p>
+          </div>
+        </div>
+        <div class="flex-item">
+          <img src="src/img/goldenbatman" alt="" class="comicimage" />
+        </div>
+      </div>
+      <div class="space"></div>
+
+      <!-- Silver age grid container -->
+      <h2 id="silver">Silver Age</h2>
+      <div class="grid-container">
+        <div class="grid-item">
+          <img src="src/img/goldenbatman" alt="" class="gridimage" />
+        </div>
+        <div class="grid-item">
+          <p>
+            The Silver Age of Comic Books was a period of artistic advancement
+            and widespread commercial success in mainstream American comic
+            books, predominantly those featuring the superhero archetype.
+            Following the Golden Age of Comic Books and an interregnum in the
+            early to mid-1950s, the Silver Age is considered to cover the period
+            from 1956 to circa 1970, and was succeeded by the Bronze and Modern
+            Ages.
+          </p>
+        </div>
+        <div class="grid-item">
+          <img src="src/img/goldenbatman" alt="" class="gridimage" />
+        </div>
+        <div class="grid-item">
+          <p>
+            The popularity and circulation of comic books about superheroes had
+            declined following World War II, and comic books about horror, crime
+            and romance took larger shares of the market. However, controversy
+            arose over alleged links between comic books and juvenile
+            delinquency, focusing in particular on crime, horror, and
+            superheroes. In 1954, publishers implemented the Comics Code
+            Authority to regulate comic content.
+          </p>
+        </div>
+        <div class="grid-item">
+          <img src="src/img/goldenbatman" alt="" class="gridimage2" />
+        </div>
+        <div class="grid-item">
+          <p>
+            In the wake of these changes, publishers began introducing superhero
+            stories again, a change that began with the introduction of a new
+            version of DC Comics' The Flash in Showcase #4 (October 1956). In
+            response to strong demand, DC began publishing more superhero titles
+            including Justice League of America, which prompted Marvel Comics to
+            follow suit beginning with The Fantastic Four #1.
+          </p>
+        </div>
+      </div>
+
+      <!-- bronze age content flex-container -->
+      <div class="space"></div>
+
+      <h2 id="bronze">Bronze Age</h2>
+      <p>
+        The Bronze Age of Comic Books is an informal name for a period in the
+        history of American superhero comic books usually said to run from 1970
+        to 1984. It follows the Silver Age of Comic Books and is followed by the
+        Modern Age of Comic Books. The Bronze Age retained many of the
+        conventions of the Silver Age, with traditional superhero titles
+        remaining the mainstay of the industry. However, a return of darker plot
+        elements and storylines more related to relevant social issues, such as
+        racism, began to flourish during the period, prefiguring the later
+        Modern Age of Comic Books.
+      </p>
+    </main>
+    <div class="flex-container">
+      <div class="flex-item">
+        <img src="src/img/AmazingSpider-Man122.jpg" alt="" />
+      </div>
+      <div class="flex-item">
+        <img src="src/img/AmazingSpider-Man122.jpg" alt="" />
+      </div>
+      <div class="flex-item">
+        <img src="src/img/AmazingSpider-Man122.jpg" alt="" />
+      </div>
+      <div class="flex-item">
+        <img src="src/img/AmazingSpider-Man122.jpg" alt="" />
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+  <footer>
+    <email>corbingraves90@gmail.com</email>
+  </footer>
+</html>
